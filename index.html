@@ -6,61 +6,69 @@
     <title>Md. Shaharia Jaman Bijoy - Biodata</title>
 
     <!-- Link stylish CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
-        <header>
+        <aside class="sidebar">
             <img src="profile.jpg" alt="Profile Photo" class="photo">
             <h1>Md. Shaharia Jaman Bijoy</h1>
             <p class="tagline">Student</p>
-        </header>
 
-        <section class="personal-info">
-            <h2>Personal Information</h2>
-            <p><strong>Date of Birth:</strong> 29/02/2000</p>
-            <p><strong>Nationality:</strong> Bangladeshi</p>
-            <p><strong>Location:</strong> Dhaka, Bangladesh</p>
-        </section>
+            <div class="contact-card">
+                <p><strong>Email:</strong> bijoy15-6317@s.diu.edu.bd</p>
+                <p><strong>Phone:</strong> +880 1866 671 786</p>
+                <p><a href="https://www.linkedin.com/in/shahriear-jaman" target="_blank">linkedin.com/in/shahriear-jaman</a></p>
+            </div>
+        </aside>
 
-        <section class="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor of Science:</strong> Daffodil International University (Expected 2026)</li>
-                <li><strong>Higher Secondary Certificate:</strong> PPIMSC (2019)</li>
-            </ul>
-        </section>
+        <main class="main">
+            <section class="personal-info">
+                <h2>Personal Information</h2>
+                <p><strong>Date of Birth:</strong> 29/02/2000</p>
+                <p><strong>Nationality:</strong> Bangladeshi</p>
+                <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+            </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Python, Java, C++</li>
-                <li>Communication & Teamwork</li>
-            </ul>
-        </section>
+            <section class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Bachelor of Science:</strong> Daffodil International University (Expected 2026)</li>
+                    <li><strong>Higher Secondary Certificate:</strong> PPIMSC (2019)</li>
+                </ul>
+            </section>
 
-        <section class="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Intern:</strong> Company Name – Short description</li>
-                <li><strong>Project:</strong> Project title – Description</li>
-            </ul>
-        </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul class="chips">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Communication</li>
+                </ul>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li><strong>Intern:</strong> Company Name – Short description</li>
+                    <li><strong>Project:</strong> Project title – Description</li>
+                </ul>
+            </section>
+        </main>
 
         <footer>
-            <h2>Contact</h2>
-            <p>Email: bijoy15-6317@s.diu.edu.bd</p>
-            <p>Phone: +880 1866 671 786</p>
-            <p>
-                LinkedIn: 
-                <a href="https://www.linkedin.com/in/shahriear-jaman" target="_blank">
-                    linkedin.com/in/shahriear-jaman
-                </a>
-            </p>
+            <p>© <span id="year"></span> Md. Shaharia Jaman Bijoy — All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
